@@ -99,10 +99,33 @@ Your change is 12.59 shekel
 - Or the amount missing (if not enough)
 
 
+## 📂 Files Included
+| File Name                         | Description                                          |
+| --------------------------------- | ---------------------------------------------------- |
+| `calculatePayment.sh`             | Main Bash script                                     |
+| `He_wants_to_return_the_bags.txt` | Example input file with prices                       |
+| `grocery.txt`                     | Example input file with multiple product prices      |
+| `info.txt`                        | Information about the file format and testing rules  |
+| `no_numbers.txt`                  | Test file with no numbers (to verify error handling) |
 
 
+## 🧠 Testing Notes
 
+- The script is flexible enough to handle unknown files (not just the given ones).
 
+- Each file may contain at most one number per line.
+
+- Empty or invalid lines are automatically ignored.
+
+- Additional hidden test files can be used without code modification.
+
+## 🚀 Expected Output Summary
+| Input File(s)                                   | Money Given | Expected Total | Result         |
+| ----------------------------------------------- | ----------- | -------------- | -------------- |
+| `He_wants_to_return_the_bags.txt`               | 100         | 19.20          | Change: 80.80  |
+| `grocery.txt`                                   | 50          | 28.21          | Change: 21.79  |
+| `no_numbers.txt`                                | 100         | 0.00           | Change: 100.00 |
+| `grocery.txt + He_wants_to_return_the_bags.txt` | 60          | 47.41          | Change: 12.59  |
 
 
 
