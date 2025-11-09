@@ -29,7 +29,8 @@ chmod +x calculatePayment.sh
 
 The syntax to run the script is
 
-```./calculatePayment.sh <file1> [<file2> ...] <money>
+```
+bash calculatePayment.sh <file1> [<file2> ...] <money>
 ```
 
 ** You can pass one or multiple text files as input.
@@ -43,6 +44,7 @@ bash calculatePayment.sh He_wants_to_return_the_bags.txt 100
 
 #### Output:
 Total purchase price : 19.20
+
 Your change is 80.80 shekel
 
 
@@ -53,6 +55,7 @@ bash calculatePayment.sh grocery.txt 50
 
 #### Output:
 Total purchase price : 28.21
+
 Your change is 21.79 shekel
 
 
@@ -63,6 +66,7 @@ bash calculatePayment.sh no_numbers.txt 100
 
 #### Output:
 Total purchase price : 0.00
+
 Your change is 100.00 shekel
 
 
@@ -73,6 +77,7 @@ bash calculatePayment.sh grocery.txt He_wants_to_return_the_bags.txt 60
 
 #### Output:
 Total purchase price : 47.41
+
 Your change is 12.59 shekel
 
 ## 🔍 How It Works (Simplified Explanation)
