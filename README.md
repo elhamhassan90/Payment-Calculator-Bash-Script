@@ -38,7 +38,7 @@ bash calculatePayment.sh <file1> [<file2> ...] <money>
 
 
 ## flowchart TD
----
+
 A[Start Script] --> B{Are there at least 2 arguments?}
 B -- No --> B1[Show usage & Exit]
 B -- Yes --> C[Get last argument as 'money']
@@ -68,7 +68,6 @@ O -- No --> O2[Print "You need to add X shekel"]
 O1 --> P[End]
 O2 --> P[End]
 N1 --> P[End]
----
 
 
 
