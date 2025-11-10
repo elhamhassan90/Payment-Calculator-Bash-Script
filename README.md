@@ -36,6 +36,54 @@ bash calculatePayment.sh <file1> [<file2> ...] <money>
 ** You can pass one or multiple text files as input.
 ** The last argument must be the amount of money the customer pays.
 
+
+## flowchart TD
+---
+A[Start Script] --> B{Are there at least 2 arguments?}
+B -- No --> B1[Show usage & Exit]
+B -- Yes --> C[Get last argument as 'money']
+
+C --> D{Is 'money' a valid positive number?}
+D -- No --> D1[Show error & Exit]
+D -- Yes --> E[Validate all files before 'money']
+
+E --> F{Do all files exist?}
+F -- No --> F1[Show missing file error & Exit]
+F -- Yes --> G[Initialize total_sum = 0]
+
+G --> H[For each file → Read line by line]
+H --> I[Extract numbers using regex]
+I --> J[Add all numbers to total_sum using bc]
+
+J --> K[Round total_sum to 2 decimals]
+K --> L[Print "Total purchase price : total_sum"]
+
+L --> M[Compare total_sum with paid money]
+M --> N{Equal?}
+N -- Yes --> N1[Print "Exact payment"]
+N -- No --> O{Paid > total?}
+O -- Yes --> O1[Print "Your change is X shekel"]
+O -- No --> O2[Print "You need to add X shekel"]
+
+O1 --> P[End]
+O2 --> P[End]
+N1 --> P[End]
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 💡Examples
 #### Example 1 — Single file
 ```
