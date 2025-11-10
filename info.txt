@@ -1,0 +1,5 @@
+Note – Each line will contain at most one number representing the product price.
+
+There may be additional lines that contain no numbers at all, as well as blank lines.
+
+The tests will also be performed on additional files beyond the given data, so you must check for other possible cases.
