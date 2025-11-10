@@ -129,5 +129,18 @@ Your change is 12.59 shekel
 
 
 
+---
+
+## 👨‍💻 Author Information
+
+- **👤 Name:** Elham Hasan Gouda Tammam Kedwany  
+- **🔗 LinkedIn:** [linkedin.com/in/elham-hasan-6b029433a](https://www.linkedin.com/in/elham-hasan-6b029433a)  
+- **💻 GitHub:** [github.com/elhamhassan90](https://github.com/elhamhassan90)
+
+---
+
+
+
+
 
 
